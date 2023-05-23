@@ -1,24 +1,9 @@
-# README
+# 连接数据库
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+docker start db-for-mangosteen
+```
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 插件
+1. 分页 (kaminari)[https://github.com/kaminari/kaminari]

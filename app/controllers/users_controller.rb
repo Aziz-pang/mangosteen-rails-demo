@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
+  def index
+    user = User.page().per(10)
+    render json: user
+  end
+
   def create
-    user = User.new name: 'pang'
+    user = User.new name: 'pang', email: params[:email]
     if user.save
       render json: user
     else
